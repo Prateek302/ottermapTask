@@ -25,6 +25,15 @@ const FormComponent = ({ setUser }) => {
       <div className="bg-white shadow-lg rounded-lg p-6 w-[90%] max-w-md">
         <h2 className="text-2xl font-bold text-green-700 text-center mb-4">User Form</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="relative">
+            <FaSearch className="absolute left-3 top-3 text-green-600" />
+            <input
+              type="text"
+              placeholder="Search something..."
+              className="w-full pl-10 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
           <div className="relative">
             <FaUser className="absolute left-3 top-3 text-green-600" />
             <input
@@ -46,15 +55,6 @@ const FormComponent = ({ setUser }) => {
               className="w-full pl-10 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.mobile}
               onChange={handleChange}
-            />
-          </div>
-
-          <div className="relative">
-            <FaSearch className="absolute left-3 top-3 text-green-600" />
-            <input
-              type="text"
-              placeholder="Search something..."
-              className="w-full pl-10 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
