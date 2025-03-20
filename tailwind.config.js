@@ -1,10 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+    content: ["./index.html", "./src/**/*.{js,jsx}"],
     theme: {
       extend: {
         colors: {
-          black: "#000000",
-          yellow: "#FFD700",
+          primary: "#FFD700", // Gold
+          secondary: "#1A1A1A", // Dark Black
         },
       },
     },
